@@ -8,8 +8,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Run tests
+    - name: Run build
       run: |
-       docker build . --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest
-       docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
-       docker push ghcr.io/deselikem/hello-docker-gcr-demo:latest
+       docker build . --tag ghcr.io/mpapai04/hello-docker-gcr-demo:latest
+       docker run ghcr.io/mpapai04/hello-docker-gcr-demo:latest
+       docker push ghcr.io/mpapai04/hello-docker-gcr-demo:latest
